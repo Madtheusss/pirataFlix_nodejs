@@ -1,3 +1,17 @@
 .navigation{
-    color: green;    
+    background-color: red;  
+    color: #e5e5e5;
+    display: flex;
+    height: 68px;
+}
+
+.navigationList{
+    list-style:none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.navigationItem{
+    margin-left: 1rem;
 }
