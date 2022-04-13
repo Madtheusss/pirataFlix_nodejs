@@ -1,3 +1,22 @@
 .billboard{
     background-color: greenyellow;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.innerBillboard{
+    position:absolute;
+    z-index: -1;
+}
+
+.info{
+
+    position: absolute;
+    top: 0;
+    bottom: 35%;
+    left: 4%;
+    width: 36%;
+    z-index: 10;
 }

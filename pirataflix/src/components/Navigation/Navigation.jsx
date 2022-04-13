@@ -1,4 +1,5 @@
 import React from "react";
+import SecundaryNavigation from "../SecundaryNavigation/SecundaryNavigation";
 
 import logo from './assets/logo.png';
 import styles from './Navigation.module.css';
@@ -13,12 +14,17 @@ const Navigation = () => {
     ]
     return(
         <div className={styles.navigation}>
-            <img src={logo} alt="LogoNetflix" />
-            <ul className={styles.navigationList}>
-                {navItems.map((item) => (
-                    <li className={styles.navigationItem} key={item}>{item}</li>
-                ))}
-            </ul>
+            <div className={styles.mainNavigation}>
+                <img className={styles.logo} src={logo} alt="LogoNetflix" />
+                <ul className={styles.navigationList}>
+                    {navItems.map((item) => (
+                        <li className={styles.navigationItem} key={item}>
+                            <a href="/">{item}</a>
+                        </li>
+                    ))}
+                </ul>
+            </div>
+            <SecundaryNavigation />
         </div>
     )
 }
